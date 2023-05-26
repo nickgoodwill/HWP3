@@ -7,6 +7,20 @@
 # 1 2 3 4 5
 # 3    -> 1
 
+n = int(input('Введите кол-во элементов: '))
+some_list = []
+for _ in range(n):
+     some_list.append(int(input()))
+print(some_list)
+
+x = int(input('Введите число: '))
+count = 0
+
+for i in range(0, len(some_list)-1):
+    if some_list[i] == x:
+         count += 1
+
+print(count)
 
 
 
